@@ -14,8 +14,4 @@ use App\Http\Controllers\PostController;
 |
 */
 
-Route::get('/posts',[PostController::class,'index']);
-/*
-('url',[postcontroller::class,'fanction'])
-urlにgetでアクセスされたらfanctionを実行する
-*/
+Route::get('/', [PostController::class, 'index']);
